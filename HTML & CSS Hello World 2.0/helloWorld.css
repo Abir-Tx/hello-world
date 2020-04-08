@@ -1,0 +1,12 @@
+.heading
+{
+    color: white;
+    background-color: black;
+    outline-color: blue;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.heading:hover
+{
+    background-color: red;
+}
