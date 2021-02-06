@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Bash",
+            "type": "shell",
+            "command": "chmod +x ${fileDirname}/${fileBasename} && bash ${fileDirname}/${fileBasename}",
+            "detail": "Runs a bash script from any directory and also changes the permission to executable",
+            "presentation": {
+                "echo": false,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "promptOnClose": true
+        }
+    ]
+}
