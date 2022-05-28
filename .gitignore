@@ -8,3 +8,5 @@ Qt5/build-helloWorld-Desktop_Qt_5_12_10_GCC_64bit-Debug/
 .vs/slnx.sqlite
 .vs/VSWorkspaceState.json
 .vs/hello-world/v16/.suo
+*.exe
+*.obj
