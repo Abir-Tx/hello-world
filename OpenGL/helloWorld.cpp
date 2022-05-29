@@ -25,6 +25,9 @@ int main(int argc, char **argv)
 	// Call the display callback function
 	glutDisplayFunc(display);
 
+	// Call the reshape callback Function
+	glutReshapeFunc(reshape);
+
 	// Start the Main Execution loop to keep window alive
 	glutMainLoop();
 
@@ -38,7 +41,6 @@ void display()
 	glClear(GL_COLOR_BUFFER_BIT);
 	// Reset matrix/co-ordinate system
 	glLoadIdentity();
-	glutReshapeFunc(reshape);
 
 	// begin specifying opengl vertices
 	glBegin(GL_TRIANGLES);
@@ -54,6 +56,7 @@ void display()
 	glFlush();
 }
 
+// Define the reshape function
 void reshape(int w, int h)
 {
 	glViewport(0, 0, (GLsizei)w, (GLsizei)h);
@@ -61,4 +64,5 @@ void reshape(int w, int h)
 	glLoadIdentity();
 	gluOrtho2D(-10, 10, -10, 10);
 	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
 }
